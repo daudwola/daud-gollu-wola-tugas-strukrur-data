@@ -2,7 +2,7 @@
 
 Program Python sederhana untuk mengelola nilai 10 mahasiswa menggunakan array (list di Python). Program ini mencakup input nilai, perhitungan statistik dasar, dan visualisasi grafik menggunakan matplotlib.
 
-1.Penjelasan Konsep Array
+**1.Penjelasan Konsep Array**
 
 Array adalah struktur data yang digunakan untuk menyimpan kumpulan elemen dengan tipe data yang sama dalam lokasi memori yang berurutan . Dalam Python, array paling umum diimplementasikan menggunakan tipe data list.
 
