@@ -70,4 +70,4 @@ Hal yang ingin saya tingkatkan di proyek selanjutnya:
 * Menambahkan fitur pencarian mahasiswa berdasarkan nilai tertentu
 * Mengimplementasikan max/min tanpa fungsi built-in (loop manual) untuk latihan lebih dalam
 
- ** Dibuat :Daud Gollu Wola (2501010343)**
+**Dibuat :Daud Gollu Wola** (2501010343)
