@@ -48,24 +48,25 @@ Kesimpulan: Program sangat efisien untuk skala kecil (10 mahasiswa). Jika jumlah
 Refleksi Pembelajaran
 Melalui proyek ini saya belajar beberapa hal penting:
 
-Pemahaman array/list di Python
+1.Pemahaman array/list di Python
 List sangat fleksibel dan powerful untuk pemula, tapi saya menyadari batasannya jika data sangat besar.
 
-Input validation
+2.Input validation
 Menggunakan try-except dan loop while untuk memastikan input valid sangat penting agar program tidak crash.
 
-Pemisahan logika
+3.Pemisahan logika
 Memisahkan bagian input, proses, output, dan visualisasi membuat kode lebih mudah dibaca dan dimodifikasi.
 
-Visualisasi data
+4.Visualisasi data
 Grafik sederhana dengan matplotlib membantu memahami distribusi nilai jauh lebih cepat dibandingkan hanya angka.
 
-Kesadaran kompleksitas
+5.Kesadaran kompleksitas
 Meskipun n kecil, saya mulai terbiasa berpikir tentang Big-O bahkan pada program sederhana.
 
 Hal yang ingin saya tingkatkan di proyek selanjutnya:
 
-Membuat input jumlah mahasiswa menjadi dinamis (bukan fix 10)
-Menyimpan data ke file (CSV/JSON)
-Menambahkan fitur pencarian mahasiswa berdasarkan nilai tertentu
-Mengimplementasikan max/min tanpa fungsi built-in (loop manual) untuk latihan lebih dalam# daud-gollu-wola-tugas-strukrur-data
+* Membuat input jumlah mahasiswa menjadi dinamis (bukan fix 10)
+* Menyimpan data ke file (CSV/JSON)
+* Menambahkan fitur pencarian mahasiswa berdasarkan nilai tertentu
+* Mengimplementasikan max/min tanpa fungsi built-in (loop manual) untuk latihan lebih dalam
+  Dibuat :Daud Gollu Wola (2501010343)
