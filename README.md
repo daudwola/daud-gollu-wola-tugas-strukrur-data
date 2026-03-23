@@ -38,8 +38,7 @@ Grafik bar (Min – Avg – Max)
 
 
 
-3. Analisis Kompleksitas
-Operasi	Metode yang digunakan	Kompleksitas Waktu	Kompleksitas Ruang	Keterangan
+3. Analisis KompleksitasOperasi	Metode yang digunakan	Kompleksitas Waktu	Kompleksitas Ruang	Keterangan
 Input 10 nilai	loop + append	O(1)	O(n)	n = 10 (konstan)
 Mencari nilai maksimum	max(nilai)	O(n)	O(1)	Harus scan seluruh elemen
 Mencari nilai minimum	min(nilai)	O(n)	O(1)	Sama seperti max
