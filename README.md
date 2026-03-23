@@ -1,5 +1,5 @@
-**Sistem Pengelolaan Nilai Mahasiswa Sederhana
-**
+Sistem Pengelolaan Nilai Mahasiswa Sederhana
+
 Program Python sederhana untuk mengelola nilai 10 mahasiswa menggunakan array (list di Python). Program ini mencakup input nilai, perhitungan statistik dasar, dan visualisasi grafik menggunakan matplotlib.
 
 1.Penjelasan Konsep Array
