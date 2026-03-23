@@ -38,7 +38,7 @@ Grafik bar (Min – Avg – Max)
 
 
 
-3. Analisis Kompleksitas
+**3. Analisis Kompleksitas**
 
    ![screenshot-1774286469210](https://github.com/user-attachments/assets/eab93642-6954-45d5-b9ed-36930ea3a204)
 
