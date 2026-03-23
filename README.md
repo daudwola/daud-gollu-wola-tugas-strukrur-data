@@ -38,15 +38,10 @@ Grafik bar (Min – Avg – Max)
 
 
 
-3. Analisis KompleksitasOperasi	Metode yang digunakan	Kompleksitas Waktu	Kompleksitas Ruang	Keterangan
-Input 10 nilai	loop + append	O(1)	O(n)	n = 10 (konstan)
-Mencari nilai maksimum	max(nilai)	O(n)	O(1)	Harus scan seluruh elemen
-Mencari nilai minimum	min(nilai)	O(n)	O(1)	Sama seperti max
-Menghitung rata-rata	statistics.mean()	O(n)	O(1)	Memerlukan penjumlahan semua elemen
-Menghitung jumlah mahasiswa lulus	generator expression + sum()	O(n)	O(1)	Linear scan
-Menampilkan output teks	print()	O(n)	O(1)	—
-Membuat grafik bar	matplotlib (rendering)	O(1) untuk data kecil	O(1)	Kompleksitas dominan di rendering, bukan data
-Keseluruhan program	—	O(n)	O(n)	n = 10 → praktis konstan
+3. Analisis Kompleksitas
+
+   ![screenshot-1774286469210](https://github.com/user-attachments/assets/eab93642-6954-45d5-b9ed-36930ea3a204)
+
 
 Kesimpulan: Program sangat efisien untuk skala kecil (10 mahasiswa). Jika jumlah mahasiswa menjadi jutaan, saya bisa optimasi dengan struktur data yang lebih baik (misal heap untuk max/min cepat), tapi untuk kasus ini sudah sangat memadai.
 
