@@ -1,7 +1,9 @@
 **Sistem Pengelolaan Nilai Mahasiswa Sederhana**
+
 Program Python sederhana untuk mengelola nilai 10 siswa menggunakan array (list di Python). Program ini mencakup nilai input, perhitungan statistik dasar, dan visualisasi grafik menggunakan matplotlib.
 
 **1.Penjelasan Konsep Array**
+
 Array adalah struktur data yang digunakan untuk menyimpan kumpulan elemen dengan tipe data yang sama dalam lokasi memori yang berurutan. Dalam Python, array paling umum diimplementasikan menggunakan tipe data list .
 
 Dalam program ini, saya menggunakan list ( nilai = []) sebagai array satu dimensi untuk menyimpan nilai siswa. Karakteristik utama yang dimanfaatkan:
@@ -19,5 +21,7 @@ Kekurangan (jika skalanya besar):
 
 Operasi pencarian max/min/rata-rata tetap O(n)
 Tidak se-efisien array statistik dalam bahasa seperti C/C++ untuk akses sangat cepat
+
 **2. Screenshot Hasil Eksekusi
 Nilai masukan**
+<img width="1259" height="308" alt="image" src="https://github.com/user-attachments/assets/afe5cca3-51e3-40e1-abca-88504c58698d" />
