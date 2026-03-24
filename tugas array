@@ -2,7 +2,7 @@ import statistics  # untuk mean (rata-rata)
 import matplotlib.pyplot as plt
 
 # =====================================
-# 1. Input 10 nilai mahasiswa
+Input 10 nilai mahasiswa
 # =====================================
 nilai = []
 
@@ -19,9 +19,9 @@ for i in range(1, 11):
         except ValueError:
             print("Masukkan angka yang valid!")
 
-
-# 2. Proses data
-
+# =====================================
+ Proses data
+# =====================================
 # Nilai tertinggi & terendah
 nilai_max = max(nilai)
 nilai_min = min(nilai)
@@ -29,13 +29,13 @@ nilai_min = min(nilai)
 # Rata-rata
 rata_rata = statistics.mean(nilai)
 
-# Jumlah lulus (nilai >= 60) dan tidak lulus
+# Jumlah lulus dan tidak lulus (K > 60)
 lulus = sum(1 for n in nilai if n >= 60)
 tidak_lulus = 10 - lulus
 
-
-# 3. Output hasil
-
+# =====================================
+ Output hasil
+# =====================================
 print("\n" + "="*50)
 print("HASIL PENGELOLAAN NILAI MAHASISWA")
 print("="*50)
@@ -44,15 +44,13 @@ print(f"Nilai tertinggi    : {nilai_max}")
 print(f"Nilai terendah     : {nilai_min}")
 print(f"Rata-rata kelas    : {rata_rata:.2f}")
 print(f"Jumlah lulus       : {lulus} orang ({lulus/10*100:.1f}%)")
-print(f"Jumlah tidak lulus : {tidak_lulus} orang")
+print(f"Jumlah tidak lulus : {tidak_lulus} orang ({tidak_lulus/10*100:.1f}%)")
 print("="*50 + "\n")
 
-
-# 4. Grafik nilai tertinggi & terendah + rata-rata
-
+# =====================================
+ Grafik 1: Ringkasan Nilai (Min - Avg - Max)
+# =====================================
 plt.figure(figsize=(10, 6))
-
-# Bar untuk max, min, rata-rata
 kategori = ['Terendah', 'Rata-rata', 'Tertinggi']
 nilai_grafik = [nilai_min, rata_rata, nilai_max]
 
@@ -68,36 +66,35 @@ for bar in bars:
     plt.text(bar.get_x() + bar.get_width()/2, yval + 2, f'{yval:.1f}',
              ha='center', va='bottom', fontsize=12, fontweight='bold')
 
-# Garis grid
 plt.grid(axis='y', linestyle='--', alpha=0.7)
-
-# Styling tambahan
 plt.tight_layout()
 plt.show()
 
-
-# 5. Grafik tambahan: Distribusi Lulus/Tidak Lulus
-
+# =====================================
+. Grafik 2: Distribusi Lulus vs Tidak Lulus (BONUS)
+# =====================================
 plt.figure(figsize=(8, 6))
-kategori_pie = ['Lulus', 'Tidak Lulus']
-data_pie = [lulus, tidak_lulus]
-colors_pie = ['#4ECDC4', '#FF6B6B']
+kategori_status = ['Lulus', 'Tidak Lulus']
+jumlah_status = [lulus, tidak_lulus]
+colors = ['#4ECDC4', '#FF6B6B']
 
-plt.subplot(1, 2, 1)
-plt.pie(data_pie, labels=kategori_pie, colors=colors_pie, autopct='%1.1f%%', startangle=90)
-plt.title('Distribusi Kelulusan', fontweight='bold')
+plt.pie(jumlah_status, labels=kategori_status, colors=colors, autopct='%1.1f%%', startangle=90)
+plt.title('Distribusi Kelulusan Mahasiswa', fontsize=16, fontweight='bold')
+plt.axis('equal')
+plt.tight_layout()
+plt.show()
 
-# Histogram semua nilai
-plt.subplot(1, 2, 2)
-plt.hist(nilai, bins=10, color='#45B7D1', edgecolor='white', alpha=0.7)
-plt.axvline(x=60, color='red', linestyle='--', linewidth=2, label='Batas Lulus (60)')
-plt.xlabel('Nilai')
-plt.ylabel('Jumlah Mahasiswa')
-plt.title('Distribusi Nilai Kelas')
+# =====================================
+ Grafik 3: Histogram semua nilai (BONUS)
+# =====================================
+plt.figure(figsize=(10, 6))
+plt.hist(nilai, bins=10, edgecolor='black', color='#45B7D1', alpha=0.7)
+plt.axvline(rata_rata, color='red', linestyle='--', linewidth=2, label=f'Rata-rata: {rata_rata:.1f}')
+plt.axvline(60, color='green', linestyle=':', linewidth=2, label='KKM (60)')
+plt.title('Distribusi Nilai Seluruh Mahasiswa', fontsize=16, fontweight='bold')
+plt.xlabel('Nilai', fontsize=12)
+plt.ylabel('Jumlah Mahasiswa', fontsize=12)
 plt.legend()
 plt.grid(axis='y', alpha=0.3)
-
 plt.tight_layout()
 plt.show()
-
-print("Grafik telah ditampilkan!")
